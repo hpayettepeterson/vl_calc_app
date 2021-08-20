@@ -1,18 +1,14 @@
 import streamlit as st
 
 st.markdown("""# How much could you save with [VisioLab](https://visiolab.io/)?
-## Calculate your estimated yearly savings
+## Calculate your estimated yearly savings...
 """)
 
-
+# button for more info
 if st.button('What counts as one point of sale?'):
-    # print is visible in server output, not in the page
-    print('button clicked!')
     st.write('A point of sale is a checkout (normally with one cashier) where one person can pay for their food at a time')
 
-st.markdown("""
-
-
+st.markdown("""------------------
 ## How many points of sale do you have?
 """)
 pos = st.slider('', 1, 20, 3)
@@ -56,6 +52,24 @@ st.markdown("""
 ## Your estimated yearly savings would be:
 """)
 st.write(savings, 'Euros')
+
+st.markdown("""\n
+            \n
+            \n
+            \n
+            \n
+            ----------------------------------
+            """)
+
+# button for more info
+if st.button('More info...'):
+    st.write(
+        'At least one cashier is needed per 4 VisioLab units, to help customers with the process (a bit like automated checkouts in supermarkets).'
+    )
+    st.write(
+        'This is calculated assuming an average salary of 27000 Euros per cashier.')
+
+
 
 # this slider allows the user to select a number of lines
 # to display in the dataframe
