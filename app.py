@@ -67,7 +67,7 @@ if st.button('More info...'):
         'At least one cashier is needed per 4 VisioLab units, to help customers with the process (a bit like automated checkouts in supermarkets).'
     )
     st.write(
-        'This is calculated assuming an average salary of 27000 Euros per cashier.')
+        'This is calculated assuming an average yearly salary of 27000 Euros per cashier.')
 
 
 
